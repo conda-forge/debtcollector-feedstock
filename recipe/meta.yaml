@@ -1,7 +1,7 @@
 {%set name = "debtcollector" %}
-{%set version = "1.5.0" %}
+{%set version = "1.6.0" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "8eab1fba356cc465c4ab347119e217b045929713e2c543290f7c0571ede417dc" %}
+{%set hash_val = "366046b5d25bbca6c3da7111cffd2f3d8e8502eebc6f7a292492d7a8592fd4d2" %}
 
 package:
   name: {{ name }}
