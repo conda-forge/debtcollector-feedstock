@@ -1,7 +1,7 @@
 {%set name = "debtcollector" %}
-{%set version = "1.6.0" %}
+{%set version = "1.8.0" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "366046b5d25bbca6c3da7111cffd2f3d8e8502eebc6f7a292492d7a8592fd4d2" %}
+{%set hash_val = "66cd8a08a585f6836896fc980389f1e57bbe36eb140494e546a439b29234d83a" %}
 
 package:
   name: {{ name }}
@@ -41,7 +41,10 @@ test:
 about:
   home: http://docs.openstack.org/developer/debtcollector/
   license: Apache 2.0
+  license_family: Apache
   summary: 'A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.'
+  dev_url: https://github.com/openstack/debtcollector
+  doc_url: http://docs.openstack.org/developer/debtcollector/
 
 extra:
   recipe-maintainers:
