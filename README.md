@@ -11,6 +11,18 @@ Summary: A collection of Python deprecation patterns and strategies that help yo
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/debtcollector-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/debtcollector-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/debtcollector-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/debtcollector-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/debtcollector-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/debtcollector-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/debtcollector/badges/version.svg)](https://anaconda.org/conda-forge/debtcollector)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/debtcollector/badges/downloads.svg)](https://anaconda.org/conda-forge/debtcollector)
+
 Installing debtcollector
 ========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `debtcollector` available on your 
 ```
 conda search debtcollector --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/debtcollector-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/debtcollector-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/debtcollector-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/debtcollector-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/debtcollector-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/debtcollector-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/debtcollector/badges/version.svg)](https://anaconda.org/conda-forge/debtcollector)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/debtcollector/badges/downloads.svg)](https://anaconda.org/conda-forge/debtcollector)
 
 
 Updating debtcollector-feedstock
