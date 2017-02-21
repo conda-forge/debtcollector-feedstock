@@ -1,19 +1,21 @@
 {%set name = "debtcollector" %}
-{%set version = "1.8.0" %}
+{%set version = "1.11.0" %}
+{%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "66cd8a08a585f6836896fc980389f1e57bbe36eb140494e546a439b29234d83a" %}
+{%set hash_val = "733afa881c844a40ef4623ab73ce1862e505bc4655635da3a91d8f3482677785" %}
+{%set build_num = "0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: {{ build_num }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 
@@ -42,6 +44,7 @@ about:
   home: http://docs.openstack.org/developer/debtcollector/
   license: Apache 2.0
   license_family: Apache
+  license_file: LICENSE
   summary: 'A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.'
   dev_url: https://github.com/openstack/debtcollector
   doc_url: http://docs.openstack.org/developer/debtcollector/
