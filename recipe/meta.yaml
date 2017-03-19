@@ -45,8 +45,8 @@ about:
   license: Apache 2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.'
-  dev_url: https://github.com/openstack/debtcollector
+  summary: A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.
+  dev_url: https://git.openstack.org/cgit/openstack/debtcollector
   doc_url: http://docs.openstack.org/developer/debtcollector/
 
 extra:
