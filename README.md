@@ -14,9 +14,9 @@ Summary: A collection of Python deprecation patterns and strategies that help yo
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/debtcollector-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/debtcollector-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/debtcollector-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/debtcollector-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/debtcollector-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/debtcollector-feedstock/branch/master)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tmp0bnegy33-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tmp0bnegy33-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/tmp0bnegy33-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tmp0bnegy33-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tmp0bnegy33-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tmp0bnegy33-feedstock/branch/master)
 
 Current release info
 ====================
