@@ -1,21 +1,21 @@
-{%set name = "debtcollector" %}
-{%set version = "1.13.0" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "51476e048626f66ead094a14906a1352efbef4c718c86f351a660fa832e1da7a" %}
-{%set build_num = "0" %}
+{% set name = "debtcollector" %}
+{% set version = "1.13.0" %}
+{% set bundle_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "51476e048626f66ead094a14906a1352efbef4c718c86f351a660fa832e1da7a" %}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ bundle_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle_type }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build_num }}
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 
@@ -27,7 +27,7 @@ requirements:
 
   run:
     - python
-    - pbr >=2.0.0
+    - pbr !=2.1.0,>=2.0.0
     - six >=1.9.0
     - wrapt >=1.7.0
     - funcsigs >=0.4  # [py26 or py27]
@@ -42,9 +42,9 @@ test:
 
 about:
   home: http://docs.openstack.org/developer/debtcollector/
+  license_file: LICENSE
   license: Apache 2.0
   license_family: Apache
-  license_file: LICENSE
   summary: A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.
   dev_url: https://git.openstack.org/cgit/openstack/debtcollector
   doc_url: http://docs.openstack.org/developer/debtcollector/
