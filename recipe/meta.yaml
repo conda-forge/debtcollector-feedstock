@@ -1,8 +1,8 @@
 {% set name = "debtcollector" %}
-{% set version = "1.15.0" %}
+{% set version = "1.16.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "8492fcd6baa371cabfb43379ddc4021bb408778380c5549f8ecc00b1430f4875" %}
+{% set hash = "78f307faa18c68edc9863f68b23d686c2ae9c74378ee814c1bc433b013b7f7ad" %}
 {% set build = 0 %}
 
 package:
