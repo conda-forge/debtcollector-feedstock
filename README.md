@@ -14,12 +14,15 @@ Summary: A collection of Python deprecation patterns and strategies that help yo
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/debtcollector-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/debtcollector-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/debtcollector-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/debtcollector-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/debtcollector/badges/version.svg)](https://anaconda.org/conda-forge/debtcollector)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/debtcollector/badges/downloads.svg)](https://anaconda.org/conda-forge/debtcollector)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-debtcollector-green.svg)](https://anaconda.org/conda-forge/debtcollector) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/debtcollector.svg)](https://anaconda.org/conda-forge/debtcollector) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/debtcollector.svg)](https://anaconda.org/conda-forge/debtcollector) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/debtcollector.svg)](https://anaconda.org/conda-forge/debtcollector) |
 
 Installing debtcollector
 ========================
