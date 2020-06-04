@@ -1,8 +1,7 @@
 {% set name = "debtcollector" %}
-{% set version = "1.21.0" %}
+{% set version = "2.1.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "f6ce5a383ad73c23e1138dbb69bf45d33f4a4bdec38f02dbf2b89477ec5e55bc" %}
+{% set hash = "a25fc6215560d81cb9f2a0b58d6c834f2a24010987027bde169599e138a205af" %}
 
 package:
   name: {{ name }}
@@ -11,11 +10,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 
 requirements:
