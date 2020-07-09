@@ -16,20 +16,20 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  noarch: python
 
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - pip
     - pbr !=2.1.0,>=2.0.0
 
   run:
-    - python
+    - python >=3.6
     - pbr !=2.1.0,>=2.0.0
     - six >=1.10.0
     - wrapt >=1.7.0
-    - funcsigs >=1.0.0  # [py26 or py27]
 
 test:
   imports:
@@ -42,7 +42,7 @@ test:
 about:
   home: http://docs.openstack.org/developer/debtcollector/
   license_file: LICENSE
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   summary: A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.
   dev_url: https://git.openstack.org/cgit/openstack/debtcollector
@@ -52,3 +52,4 @@ extra:
   recipe-maintainers:
     - anguslees
     - pmlandwehr
+    - tschoonj
