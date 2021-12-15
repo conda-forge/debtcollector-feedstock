@@ -36,6 +36,10 @@ test:
     - debtcollector.renames
     - debtcollector.removals
     - debtcollector.fixtures
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://docs.openstack.org/developer/debtcollector/
