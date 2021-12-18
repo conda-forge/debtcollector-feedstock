@@ -13,8 +13,8 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  number: 2
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -36,6 +36,10 @@ test:
     - debtcollector.renames
     - debtcollector.removals
     - debtcollector.fixtures
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://docs.openstack.org/developer/debtcollector/
@@ -49,5 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - anguslees
-    - pmlandwehr
     - tschoonj
