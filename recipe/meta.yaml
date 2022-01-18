@@ -13,6 +13,7 @@ source:
   sha256: {{ hash }}
 
 build:
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,10 +26,8 @@ requirements:
   run:
     - python
     - pbr !=2.1.0,>=2.0.0
-    - six >=1.10.0
     - wrapt >=1.7.0
-    - importlib_metadata >=1.7.0  # [py<38]
-
+    - importlib_metadata
 test:
   imports:
     - debtcollector
