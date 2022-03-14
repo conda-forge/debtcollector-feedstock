@@ -5,7 +5,7 @@ Home: http://docs.openstack.org/developer/debtcollector/
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/debtcollector-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/debtcollector-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of Python deprecation patterns and strategies that help you collect your technical debt in a non-destructive manner.
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4834&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/debtcollector-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4834&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/debtcollector-feedstock?branchName=main">
       </a>
     </td>
   </tr>
