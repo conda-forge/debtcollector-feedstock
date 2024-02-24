@@ -19,15 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - pbr !=2.1.0,>=2.0.0
 
   run:
-    - python >=3.7
-    - pbr !=2.1.0,>=2.0.0
+    - python >=3.8
     - wrapt >=1.7.0
-    - importlib_metadata
 test:
   imports:
     - debtcollector
