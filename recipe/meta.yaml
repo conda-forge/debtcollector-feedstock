@@ -14,17 +14,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
+    - setuptools
     - pbr !=2.1.0,>=2.0.0
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - wrapt >=1.7.0
 test:
   imports:
@@ -35,6 +36,7 @@ test:
     - debtcollector.fixtures
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
