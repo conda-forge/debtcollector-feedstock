@@ -1,7 +1,7 @@
 {% set name = "debtcollector" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "2a8917d25b0e1f1d0d365d3c1c6ecfc7a522b1e9716e8a1a4a915126f7ccea6f" %}
+{% set hash = "278a45608cf16e79c0ae10851d869185c6b78f86610df8f27a451a18c1fec732" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
